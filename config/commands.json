@@ -1,0 +1,77 @@
+{
+  "rip-sdk": {
+    "command": "ripsaw",
+    "args": [
+      "sdk"
+    ]
+  },
+  "qproxy": {
+    "command": "npm",
+    "args": [
+      "start"
+    ],
+    "options": {
+      "cwd": "/Volumes/Code/tools/qualtrics-dev-proxy",
+      "env": {
+        "port": 8080,
+        "https_port": 8443
+      },
+      "requiresRoot": true
+    }
+  },
+  "dashboards-local": {
+    "command": "ei-change-source.rb",
+    "args": [
+      "dashboard",
+      "local"
+    ]
+  },
+  "dashboards-docker": {
+    "command": "ei-change-source.rb",
+    "args": [
+      "dashboard",
+      "docker"
+    ]
+  },
+  "start": {
+    "command": "start.rb"
+  },
+  "status": {
+    "command": "get-status.rb"
+  },
+  "ee-dashboards-assets": {
+    "command": "npm",
+    "args": [
+      "run",
+      "watch"
+    ],
+    "options": {
+      "cwd": "/Volumes/Code/ei/ee-dashboards-java"
+    }
+  },
+  "node-version": {
+    "command": "node",
+    "args": [
+      "--version"
+    ]
+  },
+  "pwd": {
+    "command": "pwd"
+  },
+  "shell": {
+    "command": "readlink",
+    "args": [
+      "/proc/$$/exe"
+    ]
+  },
+  "nvm": {
+    "command": "nvm",
+    "args": [
+      "use",
+      "6"
+    ],
+    "options": {
+      "shell": "/usr/local/bin/fish"
+    }
+  }
+}
