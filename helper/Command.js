@@ -127,7 +127,12 @@ class Command {
     }
 
     _transformRootCommand() {
-        const envString = Object.entries(this.options.env).map(keyAndValue => keyAndValue.join('='));
+        const envString = Object.entries(this.options.env).map(([ key, value ]) => {
+            if (typeof value === 'string' && value.indexOf(' ') !== -1) {
+                value = `"${value}"`;
+            }
+            return `${key}=${value}`;
+        });
         this.args = [ ...envString, this.command, ...this.args ];
         this.command = 'sudo';
         this.log.debug(`Transformed root command: ${this.command} ${this.args.join(' ')}`.grey)
