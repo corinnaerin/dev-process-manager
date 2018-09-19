@@ -3,7 +3,10 @@
     "command": "ripsaw",
     "args": [
       "sdk"
-    ]
+    ],
+    "options": {
+      "nvm": "8.11.2"
+    }
   },
   "qproxy": {
     "command": "npm",
@@ -55,23 +58,13 @@
       "--version"
     ]
   },
-  "pwd": {
-    "command": "pwd"
-  },
-  "shell": {
-    "command": "readlink",
+  "npm-version": {
+    "command": "npm",
     "args": [
-      "/proc/$$/exe"
+      "--version"
     ]
   },
-  "nvm": {
-    "command": "nvm",
-    "args": [
-      "use",
-      "6"
-    ],
-    "options": {
-      "shell": "/usr/local/bin/fish"
-    }
+  "pwd": {
+    "command": "pwd"
   }
 }

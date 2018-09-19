@@ -10,7 +10,6 @@ const parallelTasks = require('./config/parallel');
 const seriesTasks = require('./config/series');
 
 //TODO Running grunt?
-//TODO nvm?
 //TODO user config file in HOME directory
 //TODO make publishable npm package
 //TODO make executable
