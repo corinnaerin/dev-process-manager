@@ -66,5 +66,11 @@
   },
   "pwd": {
     "command": "pwd"
+  },
+  "printenv": {
+    "command": "printenv",
+    "options": {
+      "nvm": "9"
+    }
   }
 }

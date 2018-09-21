@@ -61,7 +61,6 @@ These command options are supported by this script and are _not_ natively part o
 | name | default | description
 --- | --- | ---
 | requiresRoot | false | The specified command requires root/sudo in order to run. You will be prompted for your password upon execution of the command.
-| env.PATH | null | The `PATH` environment variable has special handling. If specified, its value will be _prepended_ to the existing `PATH` variable.
 | nvm | null | Any valid nvm version or alias, used to set the correct Node path into the PATH variable for the command. Requires `nvm` to be available in your shell.
 | shell | true | NodeJS defaults this to false, however many of the commands (`nvm`, `sudo`) have unpredictable behavior and/or failures unless running inside a shell. This uses the default shell, but you can specify the path to a specific shell if you prefer.
 
@@ -72,7 +71,9 @@ These command options are supported by this script and are _not_ natively part o
 If the base command is `node` or `npm`, `nvm` will be invoked automatically in the working directory of the command. This means
 `nvm` will attempt to determine the `node` version from any `.nvmrc` files in the directory tree and/or however you have
 nvm configured. If there is no available `.nvmrc` for the command you're trying to configure, or you can't set the working directory
-to the location of it, you can use `options.nvm` to manually specify the version, which can be any valid `nvm` version string
+to the location of it, you can use `options.nvm` to manually specify the version, which can be any valid `nvm` version string. 
+**Note that if you are explicitly adding a version of node to the beginning of your `$PATH` in your shell startup script, 
+that will take precedence over this and potentially cause problems. You can easily fix this by adding your preferred default node to the _end_ of your $PATH instead.**
 
 ## Configuring aliases & workflows
 

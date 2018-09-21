@@ -1,3 +1,4 @@
 {
-  "shell": "/usr/local/bin/fish"
+  "shell": "/usr/local/bin/fish",
+  "inheritEnv": []
 }
