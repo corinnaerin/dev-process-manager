@@ -44,9 +44,7 @@ should output your version of node and current working directory:
 | name | description |
 --- | ---
 | <no_target> / default / help | lists out the available commands and aliases |
---- | ---
 | `--<log_level>` | Sets the log level. Defaults to `info`. |
-
 
 ## Configuring commands
 
