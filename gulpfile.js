@@ -1,19 +1,13 @@
 const log = require('loglevel').getLogger('gulpfile');
 
 const gulp = require('gulp');
-const Command = require('./helper/Command');
+const Command = require('./lib/Command');
 const { stringify } = require('q-i');
 require('colors');
 
 const commands = require('./config/commands');
 const parallelTasks = require('./config/parallel');
 const seriesTasks = require('./config/series');
-
-//TODO Running grunt?
-//TODO user config file in HOME directory
-//TODO make publishable npm package
-//TODO make executable
-//TODO make each command its own file?
 
 Object.entries(commands).forEach(([name, config]) => {
     log.debug(`Registering command '${name}'`.grey);

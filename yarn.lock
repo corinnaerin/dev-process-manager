@@ -869,10 +869,6 @@ has-values@^1.0.0:
     is-number "^3.0.0"
     kind-of "^4.0.0"
 
-help@^3.0.2:
-  version "3.0.2"
-  resolved "http://artifactory.eng.qops.net:8081/artifactory/api/npm/npm-virtual/help/-/help-3.0.2.tgz?dl=https://registry.yarnpkg.com/help/-/help-3.0.2.tgz#96e190d4a0a453b89c2cb4b05ab38e3a8f9fdadd"
-
 homedir-polyfill@^1.0.1:
   version "1.0.1"
   resolved "http://artifactory.eng.qops.net:8081/artifactory/api/npm/npm-virtual/homedir-polyfill/-/homedir-polyfill-1.0.1.tgz?dl=https://registry.yarnpkg.com/homedir-polyfill/-/homedir-polyfill-1.0.1.tgz#4c2bbc8a758998feebf5ed68580f76d46768b4bc"

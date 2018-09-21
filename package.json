@@ -1,19 +1,24 @@
 {
-  "name": "ex-dev-process-manager",
-  "version": "1.0.0",
+  "name": "dev-process-manager",
+  "version": "0.1.0",
   "main": "index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "loglevel": "^1.6.1",
-    "loglevel-plugin-prefix": "^0.8.4",
-    "q-i": "^2.0.1"
+  "bin": {
+    "dpm": "./index.js"
+  },
+  "engines": {
+    "node": "^8.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab-app.eng.qops.net/corinnak/dev-process-manager.git"
   },
   "dependencies": {
     "colors": "^1.3.1",
-    "fancy-log": "^1.3.2",
     "gulp": "^4.0.0",
-    "help": "^3.0.2",
+    "loglevel": "^1.6.1",
+    "loglevel-plugin-prefix": "^0.8.4",
     "lodash.merge": "^4.6.1",
+    "q-i": "^2.0.1",
     "yargs": "^12.0.1"
   }
 }

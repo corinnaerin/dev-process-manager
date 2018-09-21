@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const log = require('loglevel');
 const logPrefix = require('loglevel-plugin-prefix');
 const gulp = require('gulp');
