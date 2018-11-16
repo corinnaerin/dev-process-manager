@@ -41,6 +41,15 @@ require('./gulpfile');
 
 if (argv._.length === 0) {
   log.error(`No command specified, exiting.`);
+  return;
 } else {
-  gulp.task(argv._[0])();
+  const taskName = argv._[0];
+  const task = gulp.task(taskName);
+  if (typeof task !== 'function') {
+    log.error(`Invalid command ${taskName}`);
+    return;
+  }
 }
+
+// Execute the task
+gulp.task(argv._[0])();
