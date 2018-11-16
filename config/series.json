@@ -1,11 +1,4 @@
 {
-  "dashboards-vagrant": [
-    "start",
-    "dashboards-local",
-    "rip-sdk"
-  ],
-  "test-command": [
-    "node-version",
-    "pwd"
-  ]
+  "dashboards-vagrant": ["start", "dashboards-local", "rip-sdk"],
+  "test-command": ["node-version", "pwd"]
 }

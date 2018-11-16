@@ -1,18 +1,14 @@
 {
   "rip-sdk": {
     "command": "ripsaw",
-    "args": [
-      "sdk"
-    ],
+    "args": ["sdk"],
     "options": {
       "nvm": "8.11.2"
     }
   },
   "qproxy": {
     "command": "npm",
-    "args": [
-      "start"
-    ],
+    "args": ["start"],
     "options": {
       "cwd": "/Volumes/Code/tools/qualtrics-dev-proxy",
       "env": {
@@ -24,17 +20,11 @@
   },
   "dashboards-local": {
     "command": "ei-change-source.rb",
-    "args": [
-      "dashboard",
-      "local"
-    ]
+    "args": ["dashboard", "local"]
   },
   "dashboards-docker": {
     "command": "ei-change-source.rb",
-    "args": [
-      "dashboard",
-      "docker"
-    ]
+    "args": ["dashboard", "docker"]
   },
   "start": {
     "command": "start.rb"
@@ -44,25 +34,18 @@
   },
   "ee-dashboards-assets": {
     "command": "npm",
-    "args": [
-      "run",
-      "watch"
-    ],
+    "args": ["run", "watch"],
     "options": {
       "cwd": "/Volumes/Code/ei/ee-dashboards-java"
     }
   },
   "node-version": {
     "command": "node",
-    "args": [
-      "--version"
-    ]
+    "args": ["--version"]
   },
   "npm-version": {
     "command": "npm",
-    "args": [
-      "--version"
-    ]
+    "args": ["--version"]
   },
   "pwd": {
     "command": "pwd"
