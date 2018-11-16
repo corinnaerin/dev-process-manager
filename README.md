@@ -127,3 +127,4 @@ Make sure you are using a supported version of node. See `.nvmrc` for the suppor
 * Make each command its own file? Is that better or worse than all in one file?
 * Remove Gulp dependency? I'm pushing gulp way further than it was designed for, and it's going to make it really difficult to have the more elaborate configurations, 
 and it shouldn't be hard to just support synchronous vs. asynchronous execution without it
+* Make sure all processes exit if one fails unexpectedly (or don't fail the parent process?)

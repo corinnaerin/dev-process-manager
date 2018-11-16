@@ -1,6 +1,6 @@
 {
   "name": "dev-process-manager",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "scripts": {
     "fix-code": "prettier-eslint --write --eslint-path ./node_modules/eslint *.js lib/*.js config/*.json",
@@ -37,5 +37,8 @@
     "ghooks": {
       "pre-commit": "yarn fix-code && yarn lint"
     }
+  },
+  "publishConfig": {
+    "registry": "http://artifactory.eng.qops.net:8081/artifactory/api/npm/npm-local"
   }
 }
