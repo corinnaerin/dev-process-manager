@@ -3,7 +3,20 @@
     "command": "ripsaw",
     "args": ["sdk"],
     "options": {
-      "nvm": "8.11.2"
+      "nvm": true,
+      "cwd": "/Volumes/Code/tools/ripsaw-cli",
+      "stdio": "inherit",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  },
+  "version-check": {
+    "command": "npm",
+    "args": ["start"],
+    "options": {
+      "nvm": true,
+      "cwd": "/Volumes/Code/tools/version-check-cli"
     }
   },
   "qproxy": {
@@ -12,31 +25,53 @@
     "options": {
       "cwd": "/Volumes/Code/tools/qualtrics-dev-proxy",
       "env": {
-        "port": 8080,
-        "https_port": 8443
+        "port": 80,
+        "https_port": 443
       },
       "requiresRoot": true
     }
   },
-  "dashboards-local": {
-    "command": "ei-change-source.rb",
-    "args": ["dashboard", "local"]
+  "prserver": {
+    "command": "npm",
+    "args": ["run", "watch"],
+    "options": {
+      "cwd": "/Volumes/Code/printed-reports/printed-reports-server"
+    }
   },
-  "dashboards-docker": {
-    "command": "ei-change-source.rb",
-    "args": ["dashboard", "docker"]
+  "vocalize:watch": {
+    "command": "grunt",
+    "args": ["watch"],
+    "options": {
+      "nvm": true,
+      "cwd": "/Volumes/Code/vocalize",
+      "env": {
+        "QUALTRICSHOSTNAME": "alpha.corinnak"
+      }
+    }
   },
-  "start": {
-    "command": "start.rb"
-  },
-  "status": {
-    "command": "get-status.rb"
+  "vocalize:server": {
+    "command": "yarn",
+    "args": ["start"],
+    "options": {
+      "nvm": true,
+      "cwd": "/Volumes/Code/vocalize",
+      "env": {
+        "QUALTRICSHOSTNAME": "alpha.corinnak"
+      }
+    }
   },
   "ee-dashboards-assets": {
     "command": "npm",
     "args": ["run", "watch"],
     "options": {
-      "cwd": "/Volumes/Code/ei/ee-dashboards-java"
+      "cwd": "/Volumes/Code/ex/ee-dashboard-java"
+    }
+  },
+  "assets-proxy": {
+    "command": "npm",
+    "args": ["run", "proxy"],
+    "options": {
+      "cwd": "/Volumes/Code/ex/ee-dashboard-java"
     }
   },
   "node-version": {

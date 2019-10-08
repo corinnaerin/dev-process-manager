@@ -53,6 +53,13 @@ but takes the pain out of manually running multiple CLIs in certain orders and i
 You can add or edit the commands in `./config/commands.json` to fit your own development environment and processes. The JSON
 is just a simple map from the command name (which can be whatever you want) and a configuration object that should match
 the linked API doc for [child_process.spawn](https://nodejs.org/docs/latest-v8.x/api/child_process.html#child_process_child_process_spawn_command_args_options_).
+
+### Unsupported command options
+
+The following options are controlled by this script and cannot be overridden by command configurations:
+
+* stdio
+* detached
  
 ### Additional options / behavior
 

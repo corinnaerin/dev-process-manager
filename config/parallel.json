@@ -1,3 +1,6 @@
 {
-  "widgets": ["rip-sdk", "qproxy"]
+  "widgets": ["rip-sdk", "qproxy"],
+  "pr": ["rip-sdk", "qproxy", "prserver"],
+  "vocalize": ["rip-sdk", "qproxy", "vocalize:watch"],
+  "assets": ["qproxy", "ee-dashboards-assets", "assets-proxy"]
 }

@@ -14,7 +14,7 @@ const reservedNames = new Set(['help', 'list', 'default']);
 function validateName(name) {
   if (reservedNames.has(name)) {
     log.warn(
-      `"${name}" is a reversed command name, skipping registration. Please rename your command to something else!`
+      `"${name}" is a reserved command name, skipping registration. Please rename your command to something else!`
     );
     return false;
   }
